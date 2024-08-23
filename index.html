@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display-container">
+            <input type="text" id="display" disabled>
+        </div>
+        <div class="buttons">
+            <!-- First Row -->
+            <button class="function-btn" onclick="clearDisplay()">AC</button>
+            <button class="function-btn" onclick="deleteLast()">DEL</button>
+            <button class="function-btn" onclick="insert('(')">(</button>
+            <button class="function-btn" onclick="insert(')')">)</button>
+            <button class="function-btn" onclick="insert('^')">x<sup>y</sup></button>
+            <!-- Second Row -->
+            <button class="number-btn" onclick="insert('7')">7</button>
+            <button class="number-btn" onclick="insert('8')">8</button>
+            <button class="number-btn" onclick="insert('9')">9</button>
+            <button class="operator-btn" onclick="insert('/')">÷</button>
+            <button class="function-btn" onclick="insert('Math.sqrt(')">√</button>
+            <!-- Third Row -->
+            <button class="number-btn" onclick="insert('4')">4</button>
+            <button class="number-btn" onclick="insert('5')">5</button>
+            <button class="number-btn" onclick="insert('6')">6</button>
+            <button class="operator-btn" onclick="insert('*')">×</button>
+            <button class="function-btn" onclick="insert('Math.pow(10,')">10<sup>x</sup></button>
+            <!-- Fourth Row -->
+            <button class="number-btn" onclick="insert('1')">1</button>
+            <button class="number-btn" onclick="insert('2')">2</button>
+            <button class="number-btn" onclick="insert('3')">3</button>
+            <button class="operator-btn" onclick="insert('-')">−</button>
+            <button class="function-btn" onclick="insert('Math.log10(')">log</button>
+            <!-- Fifth Row -->
+            <button class="number-btn" onclick="insert('0')">0</button>
+            <button class="number-btn" onclick="insert('.')">.</button>
+            <button class="function-btn" onclick="insert('Math.sin(')">sin</button>
+            <button class="function-btn" onclick="insert('Math.cos(')">cos</button>
+            <button class="function-btn" onclick="insert('Math.tan(')">tan</button>
+            <!-- Sixth Row -->
+            <button class="operator-btn" onclick="insert('+')">+</button>
+            <button class="function-btn" onclick="insert('Math.exp(')">exp</button>
+            <button class="operator-btn equals-btn" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

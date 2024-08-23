@@ -1,0 +1,83 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e9eaf0, #6b20b7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  width: 380px;
+  background: rgba(123, 107, 107, 0.005);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.display-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: right;
+  outline: none;
+  padding-right: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.function-btn {
+  background: #48dded; /* Soft red for function buttons */
+}
+
+.operator-btn {
+  background: #ee9025; /* Vibrant purple for operators */
+}
+
+.equals-btn {
+  background: #00b894; /* Fresh green for the equals button */
+  grid-column: span 2;
+}
+
+.number-btn {
+  background: #0984e3; /* Cool blue for numbers */
+}
+
+button:hover {
+  background: rgba(235, 172, 172, 0.3);
+  transform: translateY(-2px);
+}
+
+button:active {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(0);
+}
